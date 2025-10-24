@@ -1,9 +1,7 @@
 import TodoDashboard from './components/todos/todo-dashboard';
 
 function App() {
-  return (
-    <TodoDashboard />
-  );
+  return <TodoDashboard />;
 }
 
 export default App;
