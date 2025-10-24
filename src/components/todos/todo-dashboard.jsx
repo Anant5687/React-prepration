@@ -72,7 +72,7 @@ const TodoDashboard = () => {
 
   return (
     <div style={{ padding: '16px' }}>
-        
+
       <Btn
         btnName={'Filter All'}
         onClick={() => dispatch({ type: 'task', value: 'all' })}
@@ -98,4 +98,4 @@ const TodoDashboard = () => {
   );
 };
 
-export default React.memo(TodoDashboard);
+export default TodoDashboard;
