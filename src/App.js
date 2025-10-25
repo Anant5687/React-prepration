@@ -1,7 +1,8 @@
+import Quiz from './components/quiz';
 import TodoDashboard from './components/todos/todo-dashboard';
 
 function App() {
-  return <TodoDashboard />;
+  return <Quiz />;
 }
 
 export default App;
