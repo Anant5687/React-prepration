@@ -1,8 +1,9 @@
 import Quiz from './components/quiz';
+import EditableTodo from './components/todos/editable';
 import TodoDashboard from './components/todos/todo-dashboard';
 
 function App() {
-  return <Quiz />;
+  return <EditableTodo />;
 }
 
 export default App;
