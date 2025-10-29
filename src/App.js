@@ -1,4 +1,5 @@
 import ImageSlider from './components/image-slider';
+import InfiniteScroll from './components/InfiniteScroll';
 import MessageDashboard from './components/message-management/dashboard';
 import Quiz from './components/quiz';
 import EditableTodo from './components/todos/editable';
@@ -7,7 +8,7 @@ import VsCodeStructure from './components/vs-code-structure';
 import useInterval from './hooks/useInterval';
 
 function App() {
-  return <VsCodeStructure />;
+  return <InfiniteScroll />;
 }
 
 export default App;
