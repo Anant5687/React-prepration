@@ -18,7 +18,7 @@ const FileNodeStructure = React.memo(({ data }) => {
       if (i === ele?.id) {
         return {
           ...ele,
-          isOpen: true,
+          isOpen: !ele?.isOpen,
         };
       } else {
         return { ...ele };
