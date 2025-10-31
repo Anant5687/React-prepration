@@ -6,8 +6,13 @@ import EditableTodo from './components/todos/editable';
 import TodoDashboard from './components/todos/todo-dashboard';
 import VsCodeStructure from './components/vs-code-structure';
 import useInterval from './hooks/useInterval';
+import useOnlineStatus from './hooks/useOnlineStatus';
 
 function App() {
+  const {isOnline} = useOnlineStatus();
+
+  console.log(isOnline)
+
   return <InfiniteScroll />;
 }
 
