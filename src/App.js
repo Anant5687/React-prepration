@@ -1,4 +1,5 @@
 import ImageSlider from './components/image-slider';
+import InfiniteScrollDiv from './components/infinite-scroll';
 import InfiniteScroll from './components/InfiniteScroll';
 import MessageDashboard from './components/message-management/dashboard';
 import Quiz from './components/quiz';
@@ -15,7 +16,7 @@ function App() {
 
   console.log(isOnline)
 
-  return <ScrollToTop />;
+  return <InfiniteScrollDiv />;
 }
 
 export default App;
