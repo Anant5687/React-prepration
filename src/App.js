@@ -2,6 +2,7 @@ import ImageSlider from './components/image-slider';
 import InfiniteScroll from './components/InfiniteScroll';
 import MessageDashboard from './components/message-management/dashboard';
 import Quiz from './components/quiz';
+import ScrollToTop from './components/scroll-to-top';
 import SearchItem from './components/search-items';
 import EditableTodo from './components/todos/editable';
 import TodoDashboard from './components/todos/todo-dashboard';
@@ -14,7 +15,7 @@ function App() {
 
   console.log(isOnline)
 
-  return <SearchItem />;
+  return <ScrollToTop />;
 }
 
 export default App;
