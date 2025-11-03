@@ -5,6 +5,7 @@ import MessageDashboard from './components/message-management/dashboard';
 import Quiz from './components/quiz';
 import ScrollToTop from './components/scroll-to-top';
 import SearchItem from './components/search-items';
+import TicTacToe from './components/tic-tac-toe';
 import EditableTodo from './components/todos/editable';
 import TodoDashboard from './components/todos/todo-dashboard';
 import VsCodeStructure from './components/vs-code-structure';
@@ -16,7 +17,7 @@ function App() {
 
   console.log(isOnline)
 
-  return <InfiniteScrollDiv />;
+  return <TicTacToe />;
 }
 
 export default App;
