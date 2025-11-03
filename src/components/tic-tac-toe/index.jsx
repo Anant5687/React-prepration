@@ -6,7 +6,7 @@ const TicTacToe = () => {
   const [turn, setTurn] = useState('X');
 
   const onSelectHandler = (i) => {
-    if (selected[i]) return;
+    if (selected[i] || Object.keys(selected || {})?.length > 9) return;
     setSelected({ ...selected, [i]: turn });
     setTurn(turn === 'X' ? 'O' : 'X');
   };
@@ -17,7 +17,8 @@ const TicTacToe = () => {
         <div
           style={{
             gridColumn: 'span 1',
-            background: selected[i] === 'X' ?  'lightblue' : selected[i] &&  'red',
+            background:
+              selected[i] === 'X' ? 'lightblue' : selected[i] && 'red',
             padding: '20px',
             height: '120px',
             border: '1px solid black',
