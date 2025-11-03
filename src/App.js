@@ -2,6 +2,7 @@ import ImageSlider from './components/image-slider';
 import InfiniteScrollDiv from './components/infinite-scroll';
 import InfiniteScroll from './components/InfiniteScroll';
 import MessageDashboard from './components/message-management/dashboard';
+import NestedReply from './components/nested-reply';
 import Quiz from './components/quiz';
 import ScrollToTop from './components/scroll-to-top';
 import SearchItem from './components/search-items';
@@ -17,7 +18,7 @@ function App() {
 
   console.log(isOnline)
 
-  return <TicTacToe />;
+  return <NestedReply />;
 }
 
 export default App;
