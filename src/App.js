@@ -7,6 +7,7 @@ import NestedReply from './components/nested-reply';
 import Quiz from './components/quiz';
 import ScrollToTop from './components/scroll-to-top';
 import SearchItem from './components/search-items';
+import SuspenseUserList from './components/suspense-user-list';
 import TicTacToe from './components/tic-tac-toe';
 import EditableTodo from './components/todos/editable';
 import TodoDashboard from './components/todos/todo-dashboard';
@@ -19,7 +20,7 @@ function App() {
 
   console.log(isOnline)
 
-  return <MouseHover />;
+  return <SuspenseUserList />;
 }
 
 export default App;
