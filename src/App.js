@@ -2,6 +2,7 @@ import ImageSlider from './components/image-slider';
 import InfiniteScrollDiv from './components/infinite-scroll';
 import InfiniteScroll from './components/InfiniteScroll';
 import MessageDashboard from './components/message-management/dashboard';
+import MouseHover from './components/mouse-hover';
 import NestedReply from './components/nested-reply';
 import Quiz from './components/quiz';
 import ScrollToTop from './components/scroll-to-top';
@@ -18,7 +19,7 @@ function App() {
 
   console.log(isOnline)
 
-  return <NestedReply />;
+  return <MouseHover />;
 }
 
 export default App;
