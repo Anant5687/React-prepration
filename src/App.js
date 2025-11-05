@@ -12,15 +12,18 @@ import TicTacToe from './components/tic-tac-toe';
 import EditableTodo from './components/todos/editable';
 import TodoDashboard from './components/todos/todo-dashboard';
 import VsCodeStructure from './components/vs-code-structure';
+import { ThemeProvider } from './context/theme.context';
 import useInterval from './hooks/useInterval';
 import useOnlineStatus from './hooks/useOnlineStatus';
 
 function App() {
-  const {isOnline} = useOnlineStatus();
+  const { isOnline } = useOnlineStatus();
 
-  console.log(isOnline)
-
-  return <SuspenseUserList />;
+  return (
+    <ThemeProvider>
+      <SuspenseUserList />{' '}
+    </ThemeProvider>
+  );
 }
 
 export default App;

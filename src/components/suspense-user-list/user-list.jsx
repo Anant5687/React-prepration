@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import useDebounce from '../../hooks/useDebounce';
 
-const UserList = () => {
+const UserList = ({ theme }) => {
   const [data, setData] = useState([]);
   const [search, setSearch] = useState('');
   const [renderData, setRenderData] = useState([]);
@@ -29,7 +29,12 @@ const UserList = () => {
   }, [debouncedValue, data]);
 
   return (
-    <div>
+    <div
+      style={{
+        color: theme === 'light' ? '#000000' : '#FFFFFF',
+        background: theme === 'light' ? '#FFFFFF' : '#000000',
+      }}
+    >
       <input
         value={search}
         placeholder="Search user..."
