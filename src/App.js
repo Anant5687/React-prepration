@@ -7,6 +7,7 @@ import NestedReply from './components/nested-reply';
 import Quiz from './components/quiz';
 import ScrollToTop from './components/scroll-to-top';
 import SearchItem from './components/search-items';
+import SizeMeasureMentRenders from './components/size-measurements-renders';
 import SuspenseUserList from './components/suspense-user-list';
 import TicTacToe from './components/tic-tac-toe';
 import EditableTodo from './components/todos/editable';
@@ -21,7 +22,8 @@ function App() {
 
   return (
     <ThemeProvider>
-      <SuspenseUserList />{' '}
+      {/* <SuspenseUserList />{' '} */}
+      <SizeMeasureMentRenders />
     </ThemeProvider>
   );
 }
